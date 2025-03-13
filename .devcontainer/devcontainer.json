@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt"
+	"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt && pip uninstall -y opencv-python && pip install opencv-python-headless"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
