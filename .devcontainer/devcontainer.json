@@ -10,9 +10,10 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
+	"runArgs": ["--gpus=all"],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt && pip uninstall -y opencv-python && pip install opencv-python-headless"
+	"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
